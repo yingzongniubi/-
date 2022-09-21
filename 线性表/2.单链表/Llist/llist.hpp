@@ -42,6 +42,6 @@ public:
     void deletenode(int i);//删除索引为i的节点
 
 private:
-    node *_head;//链表头指针，创建了头指针就意味着有了一个头节点？是的，理论上“node *head”等价于“node node;node *head = &node;”只不过前者没有对象名，使用指针来访问。
+    node *_head;//链表头指针，一个指针型变量，没分配内存时，相当于只有指针，没有节点。构造函数里才有了第一个头结点。
     int length = 0;
 };
