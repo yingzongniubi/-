@@ -1,4 +1,4 @@
-#include "Linkstack/linkstack.hpp"
+#include "linkstack.cpp"
 #include <iostream>
 
 using namespace std;
@@ -13,7 +13,7 @@ void menu(){
 }
 
 int main(){
-    linkstack stack;
+    linkstack<int> stack;
     int x,data;
 
     while (1)
